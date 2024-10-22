@@ -9,16 +9,18 @@
 } */
 
 main {
-  background-color: #e6ced7;
+  background-color: rgb(92, 5, 5);
 }
 
 h1 {
   font-size: 100px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 h2 {
   font-size: 50px;
+  text-align: center;
 }
 
 p {
@@ -26,16 +28,64 @@ p {
 }
 
 .introduction-paragraph {
-  color: blue;
+  color: rgb(173, 66, 66);
 }
 
-.game-cover {
-  width: 75%;
-  height: 75%;
-  aspect-ratio: 16/9;
+.cover {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.landscape-image {
-  width: 700px;
-  height: auto;
+.All-the-classes {
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+.class-family {
+  font-size: 25px;
+}
+.five-classes {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.Barbarian {
+  margin: 20px;
+}
+
+.druid {
+  margin: 20px;
+}
+.necromancer {
+  margin: 20px;
+}
+
+.roque {
+  margin: 20px;
+}
+
+.Sorcerer {
+  margin: 20px;
+}
+
+.scetch {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.finale {
+  margin: 20px;
+}
+.objective {
+  font-size: 30px;
+  text-align: center;
+}
+
+.story-end {
+  margin: 20px;
 }
