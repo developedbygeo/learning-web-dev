@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #e8e4e4;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.two-columns > article {
+  height: fit-content;
+}
+
+.introduction-paragraph {
+  color: rgb(173, 66, 66);
+  text-align: center;
+}
+
+.landing-cover {
+  width: 100%;
+}
+
+.all-the-classes {
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+.class-family {
+  font-size: 25px;
+}
+.five-classes {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.barbarian {
+  margin: 20px;
+}
+
+.druid {
+  margin: 20px;
+}
+.necromancer {
+  margin: 20px;
+}
+
+.roque {
+  margin: 20px;
+}
+
+.Sorcerer {
+  margin: 20px;
+}
+
+.scetch {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.finale {
+  margin: 20px;
+}
+.objective {
+  font-size: 30px;
+  text-align: center;
+}
+
+.story-end {
+  margin: 20px;
+}
