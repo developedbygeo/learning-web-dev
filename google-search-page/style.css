@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #28292a;
+}
+.dot-icon {
+  height: 23px;
+}
+.profile-icon {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.gmail-icon {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.images-icon {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: end;
+}
+.search-bar {
+  --padding: 14px;
+
+  width: 400px;
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  border-radius: 28px;
+  background: grey;
+  transition: backround;
+}
+.search-input {
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
+  color: #333333;
+  margin-left: var(--padding);
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 300px;
+}
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 70vh;
+  justify-content: center;
+}
+.lucky-button {
+  height: 29px;
+  color: #fff;
+  background-color: #303134;
+  border: transparent;
+  margin: 7px;
+  padding: 8px;
+  border: 1px solid transparent;
+  transition: 0.25 ease;
+}
+.google-lang {
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.lucky-button:hover {
+  border-color: #fff;
+}
+footer {
+  height: 150px;
+  display: flex;
+  align-items: end;
+  margin-top: 80px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.text-greece {
+  border-bottom: lightslategrey;
+  color: #fff;
+  font-size: 15px;
+}
