@@ -39,7 +39,7 @@ body {
 }
 @keyframes animate {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(0px);
   }
   100% {
     transform: translateY(5px);

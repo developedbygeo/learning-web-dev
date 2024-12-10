@@ -64,7 +64,7 @@ body {
 }
 #one:checked ~ label.first .circle,
 #two:checked ~ label.second .circle,
-#third:checked ~ label.third .circle {
+#three:checked ~ label.third .circle {
   border-color: #8e49e8;
   background: #fff;
 }
