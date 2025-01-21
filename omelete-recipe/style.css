@@ -8,10 +8,11 @@
   --header-color: #854632;
   --grey-color: #e3ddd7;
   --instruction-color: #5f564d;
-  --step-font-family: "Outfit", sans-serif;
+  --step-font-family: 'Outfit', sans-serif;
   --font-weight-semi: 500;
   --big-gap: 2rem;
   --instruction-gap: 0.65rem;
+  --section-gap: 1.25rem;
 }
 
 body {
@@ -21,17 +22,32 @@ body {
   align-items: center;
 }
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-block: var(--big-gap);
   background-color: #fff;
-  height: 100rem;
   width: 46rem;
   border-radius: 2rem;
   margin-block: 5rem;
   padding-inline: 4.5rem;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+.separator {
+  width: 100%;
+  height: 0.05rem;
+  background-color: var(--grey-color);
+}
+
 .header-recipe {
-  margin-bottom: 2rem;
   font-weight: 1000;
-  font-family: "Young Serif", sans-serif;
+  font-family: 'Young Serif', sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   color: #312e2c;
@@ -46,19 +62,16 @@ main {
   width: 37rem;
   height: 18rem;
   border-radius: 0.5rem;
-  margin-bottom: 3rem;
-  margin-top: var(--big-gap);
 }
 .prep-time {
   background-color: #fff7fb;
-  height: 11rem;
+  gap: 1rem;
   border-radius: 0.7rem;
-  margin-top: 2rem;
+  padding: 1.5rem;
 }
 .prep-time-title {
   color: #7a284e;
   padding-left: 2rem;
-  padding-top: 1.5rem;
 }
 .prep-time-list {
   padding-left: 3rem;
@@ -75,7 +88,6 @@ main {
 .ingridient-title {
   color: var(--header-color);
   font-size: 1.7rem;
-  padding-top: var(--big-gap);
 }
 .ingridient-list {
   font-size: 0.95rem;
@@ -83,19 +95,14 @@ main {
   padding-left: 1rem;
   font-family: var(--step-font-family);
 }
-.egg {
-  padding-top: 1.5rem;
-}
+
 .salt {
   padding-top: var(--instruction-gap);
 }
 .butter-oil {
   padding-top: var(--instruction-gap);
 }
-.filling {
-  padding-top: var(--instruction-gap);
-  padding-bottom: var(--big-gap);
-}
+
 .instruction-tile {
   font-size: 1.7rem;
   color: var(--header-color);
@@ -105,9 +112,7 @@ main {
   font-family: var(--step-font-family);
   color: var(--instruction-color);
 }
-.first-order {
-  padding-top: 1.5rem;
-}
+
 .second-order {
   padding-top: var(--instruction-gap);
 }
@@ -123,12 +128,26 @@ main {
 .sixth-order {
   padding-top: var(--instruction-gap);
 }
-.nutrion-title {
-  padding-top: var(--big-gap);
+.nutrition-title {
   color: var(--header-color);
   font-size: 1.7rem;
 }
-.nutrion-description {
+.nutrition-description {
   font-family: var(--step-font-family);
   color: var(--instruction-color);
+}
+
+.nutritional-values {
+  list-style-type: none;
+
+  & li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 0.5rem;
+    border-bottom: 1px solid var(--grey-color);
+
+    & span:first-child {
+      padding-left: 1rem;
+    }
+  }
 }
