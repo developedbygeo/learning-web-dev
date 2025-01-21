@@ -10,7 +10,7 @@
   --instruction-color: #5f564d;
   --step-font-family: "Outfit", sans-serif;
   --font-weight-semi: 500;
-  --big-gap: 3rem;
+  --big-gap: 2rem;
   --instruction-gap: 0.65rem;
 }
 
@@ -22,13 +22,13 @@ body {
 }
 main {
   background-color: #fff;
-  height: 90rem;
-  width: 48rem;
+  height: 100rem;
+  width: 46rem;
   border-radius: 2rem;
   margin-block: 5rem;
+  padding-inline: 4.5rem;
 }
 .header-recipe {
-  margin-left: var(--big-gap);
   margin-bottom: 2rem;
   font-weight: 1000;
   font-family: "Young Serif", sans-serif;
@@ -38,24 +38,21 @@ main {
 }
 .omelette-description {
   font-size: 0.9rem;
-  margin-left: var(--big-gap);
   font-weight: 400;
   font-family: var(--step-font-family);
   color: var(--instruction-color);
 }
 .omelette-image {
-  width: 35rem;
-  height: 16rem;
-  margin: var(--big-gap);
+  width: 37rem;
+  height: 18rem;
   border-radius: 0.5rem;
   margin-bottom: 3rem;
+  margin-top: var(--big-gap);
 }
 .prep-time {
   background-color: #fff7fb;
-  width: 36rem;
-  height: 13rem;
+  height: 11rem;
   border-radius: 0.7rem;
-  margin-left: var(--big-gap);
   margin-top: 2rem;
 }
 .prep-time-title {
@@ -75,18 +72,15 @@ main {
 .cooking-time {
   padding-top: 0.65rem;
 }
-.all-ingridients {
-  margin-left: var(--big-gap);
-}
 .ingridient-title {
   color: var(--header-color);
-  padding-left: 1.5rem;
   font-size: 1.7rem;
+  padding-top: var(--big-gap);
 }
 .ingridient-list {
   font-size: 0.95rem;
   color: var(--instruction-color);
-  padding-left: 3rem;
+  padding-left: 1rem;
   font-family: var(--step-font-family);
 }
 .egg {
@@ -100,9 +94,7 @@ main {
 }
 .filling {
   padding-top: var(--instruction-gap);
-}
-.orders {
-  margin-left: var(--big-gap);
+  padding-bottom: var(--big-gap);
 }
 .instruction-tile {
   font-size: 1.7rem;
@@ -112,7 +104,6 @@ main {
   padding-left: 1.5rem;
   font-family: var(--step-font-family);
   color: var(--instruction-color);
-  padding-right: 1.5rem;
 }
 .first-order {
   padding-top: 1.5rem;
@@ -131,4 +122,13 @@ main {
 }
 .sixth-order {
   padding-top: var(--instruction-gap);
+}
+.nutrion-title {
+  padding-top: var(--big-gap);
+  color: var(--header-color);
+  font-size: 1.7rem;
+}
+.nutrion-description {
+  font-family: var(--step-font-family);
+  color: var(--instruction-color);
 }
