@@ -8,7 +8,7 @@
   --header-color: #854632;
   --grey-color: #e3ddd7;
   --instruction-color: #5f564d;
-  --step-font-family: "Outfit", sans-serif;
+  --step-font-family: 'Outfit', sans-serif;
   --font-weight-semi: 500;
   --big-gap: 2rem;
   --instruction-gap: 0.65rem;
@@ -47,7 +47,7 @@ section {
 
 .header-recipe {
   font-weight: 1000;
-  font-family: "Young Serif", sans-serif;
+  font-family: 'Young Serif', sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   color: #312e2c;
@@ -151,12 +151,21 @@ section {
     }
   }
 }
-@media screen and (max-width: 375px) {
-  main {
-    width: 35rem;
+
+@media (max-width: 480px) {
+  section {
+    background: green;
   }
-  .omelette-image {
-    width: 19rem;
-    height: 15rem;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  section {
+    background: orange;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  section {
+    background: pink;
   }
 }
