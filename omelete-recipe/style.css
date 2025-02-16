@@ -8,7 +8,7 @@
   --header-color: #854632;
   --grey-color: #e3ddd7;
   --instruction-color: #5f564d;
-  --step-font-family: 'Outfit', sans-serif;
+  --step-font-family: "Outfit", sans-serif;
   --font-weight-semi: 500;
   --big-gap: 2rem;
   --instruction-gap: 0.65rem;
@@ -47,7 +47,7 @@ section {
 
 .header-recipe {
   font-weight: 1000;
-  font-family: 'Young Serif', sans-serif;
+  font-family: "Young Serif", sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   color: #312e2c;
@@ -153,14 +153,49 @@ section {
 }
 
 @media (max-width: 480px) {
-  section {
-    background: green;
+  main {
+    padding-inline: 0.5rem;
+    width: auto;
+    border-radius: 1rem;
+    padding-top: 2rem;
+  }
+  .parent-omelette-image {
+    display: flex;
+    justify-content: center;
+  }
+  .omelette-image {
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .prep-time-list {
+    padding-left: 1.5rem;
+  }
+  .prep-time-title {
+    padding-left: 0.7rem;
   }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  section {
-    background: orange;
+  main {
+    padding-inline: 0.7rem;
+    width: auto;
+    border-radius: 1rem;
+    padding-top: 2rem;
+  }
+  .parent-omelette-image {
+    display: flex;
+    justify-content: center;
+  }
+  .omelette-image {
+    width: auto;
+    border-radius: 1rem;
+  }
+  .prep-time-list {
+    padding-left: 1.2rem;
+  }
+  .prep-time-title {
+    padding-left: 0.4rem;
   }
 }
 
@@ -168,4 +203,13 @@ section {
   section {
     background: pink;
   }
+}
+li::marker {
+  color: var(--header-color);
+}
+.nutrition-kind {
+  color: var(--instruction-color);
+}
+.nutrition-numbers {
+  color: var(--header-color);
 }
