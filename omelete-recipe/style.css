@@ -8,7 +8,7 @@
   --header-color: #854632;
   --grey-color: #e3ddd7;
   --instruction-color: #5f564d;
-  --step-font-family: "Outfit", sans-serif;
+  --step-font-family: 'Outfit', sans-serif;
   --font-weight-semi: 500;
   --big-gap: 2rem;
   --instruction-gap: 0.65rem;
@@ -47,16 +47,17 @@ section {
 
 .header-recipe {
   font-weight: 1000;
-  font-family: "Young Serif", sans-serif;
+  font-family: 'Young Serif', sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   color: #312e2c;
 }
 .omelette-description {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: var(--step-font-family);
   color: var(--instruction-color);
+  line-height: 1.45;
 }
 .omelette-image {
   width: 37rem;
@@ -78,13 +79,11 @@ section {
   padding-top: 1rem;
   color: var(--instruction-color);
   font-family: var(--step-font-family);
+  display: flex;
+  flex-direction: column;
+  gap: var(--instruction-gap);
 }
-.time {
-  padding-top: 0.65rem;
-}
-.cooking-time {
-  padding-top: 0.65rem;
-}
+
 .ingridient-title {
   color: var(--header-color);
   font-size: 1.7rem;
@@ -94,13 +93,9 @@ section {
   color: var(--instruction-color);
   padding-left: 1rem;
   font-family: var(--step-font-family);
-}
-
-.salt {
-  padding-top: var(--instruction-gap);
-}
-.butter-oil {
-  padding-top: var(--instruction-gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--instruction-gap);
 }
 
 .instruction-tile {
@@ -111,23 +106,11 @@ section {
   padding-left: 1.5rem;
   font-family: var(--step-font-family);
   color: var(--instruction-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--instruction-gap);
 }
 
-.second-order {
-  padding-top: var(--instruction-gap);
-}
-.third-order {
-  padding-top: var(--instruction-gap);
-}
-.fourth-order {
-  padding-top: var(--instruction-gap);
-}
-.fifth-order {
-  padding-top: var(--instruction-gap);
-}
-.sixth-order {
-  padding-top: var(--instruction-gap);
-}
 .nutrition-title {
   color: var(--header-color);
   font-size: 1.7rem;
@@ -215,4 +198,5 @@ li::marker {
 }
 .nutrition-numbers {
   color: var(--header-color);
+  font-weight: 800;
 }
