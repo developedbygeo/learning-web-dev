@@ -19,8 +19,8 @@ function getHumanChoice() {
 function playRound(humanChoice, computerChoice) {
   const formattedUserInput = humanChoice.toLowerCase().trim();
   const rockOption = COMPUTER_OPTIONS[0];
-  const paperOption = COMPUTER_OPTIONS[0];
-  const scissorsOption = COMPUTER_OPTIONS[0];
+  const paperOption = COMPUTER_OPTIONS[1];
+  const scissorsOption = COMPUTER_OPTIONS[2];
 
   if (formattedUserInput === rockOption && computerChoice === rockOption) {
     return "It's a draw";
